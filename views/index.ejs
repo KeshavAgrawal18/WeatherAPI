@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" type="image/x-icon" href=<%= iconUrl %> >
+</head>
+<body>
+    <h1><%= city %>, <%= country %></h1>
+    <h2><%= time %></h2>
+    <p>Weather Description: <%= weatherDescription %></p>
+    <img src= <%= iconUrl %> >
+    <h5>Temperature: <%= temp %> &deg C</h5>
+    <h5>min Temperature: <%= temp_min %></h5>
+    <h5>max Temperature: <%= temp_max %></h5>
+    <h5>feels like: <%= feels_like %></h5>
+    <h5>Wind Speed: <%= wind_speed %> m/s</h5>
+    <h5>Pressure: <%= pressure * 0.986 / 1000 %> atm</h5>
+    <h5>Humidy: <%= humidity %> % </h5>
+    
+    <!-- <p>To Check Weather of another city</p> -->
+    <form action="/">
+        <button type="submit">Check Another City</button>
+    </form>
+    <!-- res.write("<h1>" + city + "</h1>");
+    res.write("<h1>" + time + "</h1>");
+    res.write("<p>Weather Description is " + weatherDescription + "</p>");
+    res.write("<img src=" + iconUrl + ">");
+    res.write("<h5>Temperature: " + temp + " degree Celcius</h5>" );
+
+    res.write("<h3>Wind Speed: " + wind_Speed  ); -->
+</body>
+</html>

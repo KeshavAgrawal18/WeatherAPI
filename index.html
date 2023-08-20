@@ -6,41 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://openweathermap.org/img/wn/02d@2x.png" >
     <title>Weather API</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./public/css/style.css" /> -->
 </head>
 <body>
-    <h1>Know the Weather of Your City</h1>
-    <p id="cityNameTag">Type the City Name :</p>
-    <form action ="/" method="post">
-        <label for ="city">City Name</label>
-        <!-- <input id="searchTextField" type="text" size="50" placeholder="Enter a location" autocomplete="on"> -->
-        <input name ="city" type ="text" placeholder="London">
-        <p>Enter "my Location" for checking weather at your location</p>
-        <button type="Submit">Go</button>
-    </form>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
-    <script>
-        function initialize() {
-          var options = {
-            types: ['(cities)']
-            // ,componentRestrictions: {
-            //   country: "us"
-            // }
-          };
-    
-          var input = document.getElementById('searchTextField');
-          var autocomplete = new google.maps.places.Autocomplete(input, options);
-        }
-    
-        google.maps.event.addDomListener(window, 'load', initialize);
-      </script> -->
-      <script src=
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-          </script>
-      <script>
-      $.getJSON("https://api.ipify.org?format=json", function(data) {
-          console.log(data);
-      })
-        </script>
-      
+    <div class="container">
+        <h1>Check Weather</h1>
+        <form action="/" method="post">
+            <label for="city">City Name</label>
+            <input name="city" type="text" placeholder="Enter a city name">
+            <!-- <p>Or enter "my Location" to check weather at your location</p> -->
+            <button type="submit">Go</button>
+        </form>
+    </div>
 </body>
+
 </html>
